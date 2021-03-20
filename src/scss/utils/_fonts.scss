@@ -1,0 +1,13 @@
+//&display=swap&subset=cyrillic-ext
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:500,600,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:regular&display=swap');
+
+@font-face {
+	font-family: 'MuseoSlab';
+	src: url('../fonts/MuseoSlab-500.eot');
+	src: url('../fonts/MuseoSlab-500.woff') format('woff'), 
+         url('../fonts/MuseoSlab-500.ttf') format('truetype'), 
+         url('../fonts/MuseoSlab-500.svg') format('svg');
+	font-weight: 500;
+}
