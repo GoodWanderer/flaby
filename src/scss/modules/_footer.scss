@@ -15,10 +15,16 @@
   &__body {
     margin: 50px 0 75px;
     display: flex;
+    flex-wrap: wrap;
+    @media (max-width: $md1+px) {
+      padding: 0 10px;
+      margin: 50px 0;
+    }
   }
   // .footer__row
   &__row {
     // display: flex;
+    display: block;
     margin: 40px 0 0 0;
   }
   // .footer__elem
@@ -35,6 +41,14 @@
       background-color: #7c7c7c;
       margin: 0 15px;
     }
+    @media (max-width: $md2+px) {
+      flex-direction: column-reverse;
+      height: auto;
+      span{
+        opacity: 0;
+        margin: 5px 0;
+      }
+		}
   }
 }
 
@@ -45,6 +59,12 @@
   &__info {
     width: 210px;
     margin: 0 auto 0 0;
+    @media (max-width: $md1+px) {
+      flex: 1 1 100%;
+      text-align: center;
+      margin: 0 auto;
+      // padding: 20px;
+    }
   }
   // .body-footer__logo
   &__logo {}
@@ -62,6 +82,9 @@
     a {
       margin: 0 10px 0 0;
     }
+    @media (max-width: $md1+px) {
+      justify-content: center;
+    }
   }
   // .body-footer__facebook
   &__facebook {}
@@ -74,6 +97,11 @@
   // .body-footer__links
   &__links {
     display: flex;
+    @media (max-width: $md1+px) {
+      margin: 50px 0 0 0;
+      flex: 1 1 100%;
+      justify-content: space-between;
+    }
   }
   // .body-footer__item
   &__item {
@@ -82,6 +110,11 @@
     flex-direction: column;
     &:last-child{
       margin: 0;
+    }
+    @media (max-width: $md1+px) {
+      justify-content: space-between;
+      margin: 0;
+      text-align: center;
     }
   }
   // .body-footer__title

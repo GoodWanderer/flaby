@@ -1,7 +1,7 @@
 import '../scss/style.scss';
 
+import './burger';
 import './slider';
-
 
 const inputs = document.querySelectorAll('input');
 
